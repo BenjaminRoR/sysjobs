@@ -1,0 +1,17 @@
+plugin.tx_sysjobs_pi1 = USER
+plugin.tx_sysjobs_pi1 {
+  # uid of the page where the job records are stored
+  jobsPID = {$plugin.tx_sysjobs_pi1.jobsPID}
+
+  # uid of the page where the job requirements are stored
+  requirementsPID = {$plugin.tx_sysjobs_pi1.requirementsPID}
+
+  # pid of the page that shows the detail view of a job in the frontend
+  singlePID = {$plugin.tx_sysjobs_pi1.singlePID}
+
+  # uid of the page where the applicants of the jobs are located
+  applicantsPID = {$plugin.tx_sysjobs_pi1.applicantsPID}
+
+  # Default template file
+  templateFile = {$plugin.tx_sysjobs_pi1.templateFile}
+}

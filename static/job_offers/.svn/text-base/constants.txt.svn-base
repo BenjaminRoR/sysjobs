@@ -1,0 +1,17 @@
+plugin.tx_sysjobs_pi1 {
+  # cat=sysjobs; type=int+; label=job offers storage page: uid of the page where the job records are stored
+  jobsPID = 332
+  
+  # cat=sysjobs; type=int+; label=requirements storage page: uid of the page where the job requirements are stored
+  requirementsPID = 334
+
+  # cat=sysjobs; type=int+; label=pid of the page that shows the detail view of a job in the frontend
+  singlePID = 331
+
+  # cat=sysjobs; type=int+; label=applicants storage page: uid of the page where the applicants records are stored
+    applicantsPID = 335
+
+  # cat=sysjobs; type=string; label=template: Default template file
+  templateFile = EXT:sysjobs/res/sysjob_template.xhtml
+
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_sysjobs_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+                        <label index="tt_content.pi_flexform_pi1.what_to_display"></label>
+                        <label index="tt_content.pi_flexform_pi1.job_list">Job offers</label>
+                        <label index="tt_content.pi_flexform_pi1.job_detail">Job detail description</label>
+                        <label index="tt_content.pi_flexform_pi1.job_apply">Job application</label>
+                        <label index="tx_sysjobs_jobs_view.discriptiontitle">Job description</label>
+                        <label index="tx_sysjobs_jobs_view.requirementstitle">Requirements</label>
+                        <label index="tx_sysjobs_jobs_view.contacttitle">Contact person</label>
+                        <label index="tx_sysjobs_jobs_view.name">Kontaktperson</label>
+                        <label index="tx_sysjobs_jobs_view.firstname">Firstname</label>
+                        <label index="tx_sysjobs_jobs_view.adress">Adress</label>
+                        <label index="tx_sysjobs_jobs_view.zip">Zip</label>
+                        <label index="tx_sysjobs_jobs_view.city">City</label>
+                        <label index="tx_sysjobs_jobs_view.email">Email adress</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_private">Private Phone</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_mobile">Mobile Phone</label>
+                        <label index="tx_sysjobs_jobs_view.application">Applicant</label>
+                        <label index="tx_sysjobs_jobs_view.comment">Comment</label>
+		</languageKey>
+                <languageKey index="de" type="array">
+                        <label index="tt_content.pi_flexform_pi1.what_to_display"></label>
+                        <label index="tt_content.pi_flexform_pi1.job_list">Stellenangebot (Liste)</label>
+                        <label index="tt_content.pi_flexform_pi1.job_detail">Stellenbeschrieb</label>
+                        <label index="tt_content.pi_flexform_pi1.job_apply">Bewerbungsformular</label>
+                        <label index="tx_sysjobs_jobs_view.discriptiontitle">Stellenbeschrieb</label>
+                        <label index="tx_sysjobs_jobs_view.requirementstitle">Anforderungen</label>
+                        <label index="tx_sysjobs_jobs_view.contacttitle">Kontaktperson</label>
+                        <label index="tx_sysjobs_jobs_view.name">Name</label>
+                        <label index="tx_sysjobs_jobs_view.firstname">Vorname</label>
+                        <label index="tx_sysjobs_jobs_view.adress">Adresse</label>
+                        <label index="tx_sysjobs_jobs_view.zip">Plz</label>
+                        <label index="tx_sysjobs_jobs_view.city">Ort</label>
+                        <label index="tx_sysjobs_jobs_view.email">Email-Adresse</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_private">Tel. Privat</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_mobile">Tel. Mobil</label>
+                        <label index="tx_sysjobs_jobs_view.application">Bewerbungs Dossier</label>
+                        <label index="tx_sysjobs_jobs_view.comment">Bemerkung</label>
+		</languageKey>
+	</data>
+</T3locallang>

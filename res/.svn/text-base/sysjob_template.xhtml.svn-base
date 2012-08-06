@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Job</title>
+</head>
+<body>
+<h1>Jobs template</h1>
+<!-- ###JOBLIST### begin -->
+<div class="joblist">
+    <ul>
+    <!-- ###JOBITEM### begin -->
+    <li>###JOBTITLE###</li>
+    <!-- ###JOBITEM### end -->
+    </ul>
+</div>
+<!-- ###JOBLIST### end -->
+<!-- ###JOBDETAIL### beginn -->
+<div class="jobdetail">
+    <h2>###TITLE###</h2>
+    <h3>###COMPANYNAME###</h3>
+    <ul>
+        <li>###COMPANYINFO###</li>
+        <li>###LEADIN###</li>
+    </ul>
+    <h3>###DESCRIPTIONTITLE###</h3>
+    <ul>
+        <li>###DESCRIPTION###</li>
+    </ul>
+    <h3>###REQUIREMENTSTITLE###</h3>
+    <ul>
+        <li>###REQUIREMENTS###</li>
+    </ul>
+    <h3>###CONTACTTITLE###</h3>
+    <ul>
+        <li>###CONTACTNAME###</li>
+        <li>###CONTACTEMAIL###</li>
+    </ul>
+</div>
+<!-- ###JOBDETAIL### end -->
+<!-- ###JOBFORM### beginn -->
+<div class="new_applicant">
+    <form id="applicant_form" action="###FORMACTION###" method="post" enctype="multipart/form-data">
+        <ul>
+            <li><label for="name">###NAME###</label></li>
+            <li><input name="tx_sysjobs_pi1[name]" type="text" id="name"/></li>
+            <li><label for="firstname">###FIRSTNAME###</label></li>
+            <li><input name="tx_sysjobs_pi1[firstname]" type="text" id="firstname"/></li>
+            <li><label for="adress">###ADRESS###</label></li>
+            <li><input name="tx_sysjobs_pi1[adress]" type="text" id="adress"/></li>
+            <li><label for="zip">###ZIP###</label></li>
+            <li><input name="tx_sysjobs_pi1[zip]" type="text" id="zip"/></li>
+            <li><label for="city">###CITY###</label></li>
+            <li><input name="tx_sysjobs_pi1[city]" type="text" id="city"/></li>
+            <li><label for="contact_email">###EMAIL###</label></li>
+            <li><input name="tx_sysjobs_pi1[contact_email]" type="text" id="contact_email"/></li>
+            <li><label for="contact_phone_private">###CONTACTPHONEPRIVATE###</label></li>
+            <li><input name="tx_sysjobs_pi1[contact_phone_private]" type="text" id="contact_phone_private"/></li>
+            <li><label for="contact_phone_mobile">###CONTACTPHONEMOBILE###</label></li>
+            <li><input name="tx_sysjobs_pi1[contact_phone_mobile]" type="text" id="contact_phone_mobile"/></li>
+            <li><label for="application">###APPLICATION###</label></li>
+            <li><input name="tx_sysjobs_pi1[application]" type="file" id="application"/></li>
+            <li><label for="comment">###COMMENT###</label></li>
+            <li><textarea name="tx_sysjobs_pi1[comment]" id="comment" cols="40" rows="5"></textarea></li>
+            <li><input type="submit" value="Submit"/></li>
+            <li><input type="hidden" name="tx_sysjobs_pi1[job_uid]" value="###JOBUID###"/></li>
+            <li><input type="hidden" name="tx_sysjobs_pi1[showUid]" value="###SHOWUID###"/></li>
+        </ul>
+    </form>
+</div>
+<!-- ###JOBFORM### end -->
+</body>
+</html>

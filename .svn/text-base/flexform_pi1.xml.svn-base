@@ -1,0 +1,34 @@
+
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+        <langChildren>0</langChildren>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <what_to_display>
+                <TCEforms>
+                    <label>LLL:EXT:sysjobs/pi1/locallang.xml:tt_content.pi_flexform_pi1.what_to_display</label>
+                    <config>
+                        <type>select</type>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">LLL:EXT:sysjobs/pi1/locallang.xml:tt_content.pi_flexform_pi1.job_list</numIndex>
+                                <numIndex index="1">job_list</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">LLL:EXT:sysjobs/pi1/locallang.xml:tt_content.pi_flexform_pi1.job_detail</numIndex>
+                                <numIndex index="1">job_detail</numIndex>
+                            </numIndex>
+                            <numIndex index="2" type="array">
+                                <numIndex index="0">LLL:EXT:sysjobs/pi1/locallang.xml:tt_content.pi_flexform_pi1.job_apply</numIndex>
+                                <numIndex index="1">job_apply</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </what_to_display>
+        </el>
+    </ROOT>
+</T3DataStructure>

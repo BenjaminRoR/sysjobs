@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_sysjobs_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+                        <label index="tt_content.pi_flexform_pi1.what_to_display"></label>
+                        <label index="tt_content.pi_flexform_pi1.job_list">Job offers</label>
+                        <label index="tt_content.pi_flexform_pi1.job_detail">Job detail description</label>
+                        <label index="tt_content.pi_flexform_pi1.job_apply">Job application</label>
+                        <label index="tx_sysjobs_jobs_view.aboutus">About us</label>
+                        <label index="tx_sysjobs_jobs_view.discriptiontitle">Job description</label>
+                        <label index="tx_sysjobs_jobs_view.requirementstitle">Requirements</label>
+                        <label index="tx_sysjobs_jobs_view.leadintitle">Your Win</label>
+                        <label index="tx_sysjobs_jobs_view.contacttitle">Contact person</label>
+                        <label index="tx_sysjobs_jobs_view.name">Kontaktperson</label>
+                        <label index="tx_sysjobs_jobs_view.firstname">Firstname</label>
+                        <label index="tx_sysjobs_jobs_view.adress">Adress</label>
+                        <label index="tx_sysjobs_jobs_view.zip">Zip</label>
+                        <label index="tx_sysjobs_jobs_view.city">City</label>
+                        <label index="tx_sysjobs_jobs_view.email">Email</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_private">Private phone</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_mobile">Mobile phone</label>
+                        <label index="tx_sysjobs_jobs_view.profil">Your profil</label>
+                        <label index="tx_sysjobs_jobs_view.application">Applicant</label>
+                        <label index="tx_sysjobs_jobs_view.comment">Comment</label>
+                        <label index="tx_sysjobs_jobs_view.submit">Submit</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidname">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidfirstname">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidadress">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidzip">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidcity">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidemail">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidcontactphoneprivate">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidcontactphonemobile">Not valid input</label>
+                        <label index="tx_sysjobs_jobs_view.confirmationtitle">Thank you for you're application</label>
+                        <label index="tx_sysjobs_jobs_view.confirmationinfo">We will call you</label>
+		</languageKey>
+                <languageKey index="de" type="array">
+                        <label index="tt_content.pi_flexform_pi1.what_to_display"></label>
+                        <label index="tt_content.pi_flexform_pi1.job_list">Stellenangebot (Liste)</label>
+                        <label index="tt_content.pi_flexform_pi1.job_detail">Stellenbeschrieb</label>
+                        <label index="tt_content.pi_flexform_pi1.job_apply">Bewerbungsformular</label>
+                        <label index="tx_sysjobs_jobs_view.aboutus">Über uns</label>
+                        <label index="tx_sysjobs_jobs_view.discriptiontitle">Ihr Aufgabengebiet</label>
+                        <label index="tx_sysjobs_jobs_view.requirementstitle">Ihr Profil</label>
+                        <label index="tx_sysjobs_jobs_view.leadintitle">Ihr Gewinn</label>
+                        <label index="tx_sysjobs_jobs_view.contacttitle">Kontaktperson</label>
+                        <label index="tx_sysjobs_jobs_view.name">Name</label>
+                        <label index="tx_sysjobs_jobs_view.firstname">Vorname</label>
+                        <label index="tx_sysjobs_jobs_view.adress">Adresse</label>
+                        <label index="tx_sysjobs_jobs_view.zip">Plz</label>
+                        <label index="tx_sysjobs_jobs_view.city">Ort</label>
+                        <label index="tx_sysjobs_jobs_view.email">Email</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_private">Telefon Privat</label>
+                        <label index="tx_sysjobs_jobs_view.contact_phone_mobile">Telefon Mobil</label>
+                        <label index="tx_sysjobs_jobs_view.profil">Ihr Profil</label>
+                        <label index="tx_sysjobs_jobs_view.application">Bewerbungs Dossier</label>
+                        <label index="tx_sysjobs_jobs_view.comment">Bemerkung</label>
+                        <label index="tx_sysjobs_jobs_view.submit">Senden</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidname">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidfirstname">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidadress">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidzip">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidcity">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidemail">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidcontactphoneprivate">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.notvalidcontactphonemobile">Bitte überprüfen Sie Ihre Eingabe</label>
+                        <label index="tx_sysjobs_jobs_view.confirmationtitle">Vielen Dank für Ihre Bewerbung</label>
+                        <label index="tx_sysjobs_jobs_view.confirmationinfo">Wir werden uns in kürze melden</label>
+		</languageKey>
+	</data>
+</T3locallang>

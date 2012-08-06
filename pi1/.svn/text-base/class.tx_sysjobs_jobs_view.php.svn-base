@@ -1,0 +1,158 @@
+<?php
+/***************************************************************
+ *  Copyright notice
+ *
+ *  (c) 2012 Benjamin Amir <benjamin.amir@sysinf.ch>
+ *  All rights reserved
+ *
+ *  This script is part of the TYPO3 project. The TYPO3 project is
+ *  free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The GNU General Public License can be found at
+ *  http://www.gnu.org/copyleft/gpl.html.
+ *
+ *  This script is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
+require_once(PATH_tslib.'class.tslib_pibase.php');
+
+
+class tx_sysjobs_jobs_view extends tslib_pibase
+{
+    var $prefixId      = 'tx_sysjobs_jobs_view';		// Same as class name
+    var $scriptRelPath = 'pi1/class.tx_sysjobs_jobs_view.php';	// Path to this script relative to the extension dir.
+    var $extKey        = 'sysjobs';	// The extension key.
+    var $conf;
+    var $cObj;
+    var $templateCode;
+
+    function __construct($conf){
+        parent::tslib_pibase();
+        $this->pi_loadLL();
+        $this->conf = $conf;
+        $this->cObj = $GLOBALS['TSFE']->cObj; // beihnhaltet das typoscript contentobject
+        $this->templateCode = $this->cObj->fileResource($this->conf['templateFile']);
+    }
+
+    /**
+     * Gibt den Stellentitel in der listeansicht zurück und den Titel in einen Link
+     *
+     * @param $joblist
+     * @return einen oder mehrere Stellentitel
+     */
+    function showJobList($jobList){
+
+        $jobListTemplate = $this->cObj->getSubpart($this->templateCode, '###JOBLIST###');
+
+        $jobItemTemplate = $this->cObj->getSubpart($jobListTemplate, '###JOBITEM###');
+
+        $htmlJobList = '';
+
+
+        foreach($jobList as $job){
+            $JobTitleLinked = "<a href='index.php?id=" . $this->conf['singlePID'] . "&no_cache=1&tx_sysjobs_pi1%5BshowUid%5D=" . $job->uid . "'>" . $job->title . "</a>";
+            $htmlJobList .= $this->cObj->substituteMarkerArray(
+                $jobItemTemplate, array(
+                    '###JOBTITLE###' => $JobTitleLinked,
+
+                )
+            );
+        }
+
+        $finalList = $this->cObj->substituteMarkerArrayCached(
+            $jobListTemplate, array(), array(
+                '###JOBITEM###' => $htmlJobList
+            )
+        );
+
+        return $finalList;
+
+    }
+
+
+
+    /**
+     * Weist die einzelnen Eigenschaften den Marker im Frontend für die Detailansicht zu
+     *
+     * @param $jobDetails
+     * @param $requirements
+     * @return Zuweisungen einzelner Marker
+     */
+    function showDetails($jobDetails, $requirements){
+
+            $requirementHtml = '';
+            foreach($requirements as $requirement){
+                $requirementHtml .= $requirement["title"] . ", " ;
+            }
+
+        $jobDetailTemplate = $this->cObj->getSubpart($this->templateCode, '###JOBDETAIL###');
+
+        $jobDetailMarkers = array(
+            '###TITLE###' => $jobDetails->title,
+            '###COMPANYNAME###' => $jobDetails->company_name,
+            '###COMPANYINFO###' => $jobDetails->company_info,
+            '###LEADIN###' => $jobDetails->leadin,
+            '###DESCRIPTIONTITLE###' => $this->pi_getLL('tx_sysjobs_jobs_view.discriptiontitle'),
+            '###DESCRIPTION###' => $jobDetails->description,
+            '###REQUIREMENTSTITLE###' => $this->pi_getLL('tx_sysjobs_jobs_view.requirementstitle'),
+            '###REQUIREMENTS###' => $requirementHtml,
+            '###CONTACTTITLE###' => $this->pi_getLL('tx_sysjobs_jobs_view.contacttitle'),
+            '###CONTACTNAME###' => $jobDetails->contact_name,
+            '###CONTACTEMAIL###' => $jobDetails->contact_email,
+        );
+
+
+        $details = $this->cObj->substituteMarkerArrayCached(
+            $jobDetailTemplate,
+            $jobDetailMarkers
+        );
+        return $details;
+    }
+
+
+
+    /**
+     * Weist die einzelnen Eigenschaften den Marker im Frontend für das Formular.
+     *
+     *
+     * @return weisst Inhalte den Markern zu
+     */
+
+
+    function showApplicantForm($jobUid){
+
+        $jobApplicantFormTemplate = $this->cObj->getSubpart($this->templateCode, '###JOBFORM###');
+
+        $jobApplicantsFormMarkers = array(
+            '###NAME###' => $this->pi_getLL('tx_sysjobs_jobs_view.name'),
+            '###FIRSTNAME###' => $this->pi_getLL('tx_sysjobs_jobs_view.firstname'),
+            '###ADRESS###' => $this->pi_getLL('tx_sysjobs_jobs_view.adress'),
+            '###ZIP###' => $this->pi_getLL('tx_sysjobs_jobs_view.zip'),
+            '###CITY###' => $this->pi_getLL('tx_sysjobs_jobs_view.city'),
+            '###EMAIL###' => $this->pi_getLL('tx_sysjobs_jobs_view.email'),
+            '###CONTACTPHONEPRIVATE###' => $this->pi_getLL('tx_sysjobs_jobs_view.contact_phone_private'),
+            '###CONTACTPHONEMOBILE###' => $this->pi_getLL('tx_sysjobs_jobs_view.contact_phone_mobile'),
+            '###APPLICATION###' => $this->pi_getLL('tx_sysjobs_jobs_view.application'),
+            '###COMMENT###' => $this->pi_getLL('tx_sysjobs_jobs_view.comment'),
+            '###FORMACTION###' => $this->pi_getPageLink($GLOBALS['TSFE']->id),
+            '###JOBUID###' => $jobUid,
+            '###SHOWUID###' => $jobUid
+
+        );
+
+        $form = $this->cObj->substituteMarkerArrayCached(
+            $jobApplicantFormTemplate,
+            $jobApplicantsFormMarkers
+        );
+        return $form;
+    }
+}
+
+?>

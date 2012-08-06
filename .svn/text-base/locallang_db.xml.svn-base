@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'sysjobs'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_sysjobs_jobs">Job offers</label>
+            <label index="tx_sysjobs_applicants">Application</label>
+			<label index="tx_sysjobs_jobs.title">Title</label>
+			<label index="tx_sysjobs_jobs.company_name">Company name</label>
+			<label index="tx_sysjobs_jobs.company_info">Company Description</label>
+			<label index="tx_sysjobs_jobs.leadin">Lead-In text</label>
+			<label index="tx_sysjobs_jobs.description">Job description</label>
+			<label index="tx_sysjobs_jobs.contact_name">Contact name</label>
+			<label index="tx_sysjobs_jobs.contact_phone">Contact telephone</label>
+			<label index="tx_sysjobs_jobs.contact_email">Contact Email</label>
+			<label index="tx_sysjobs_jobs.requirements">Requirements</label>
+			<label index="tx_sysjobs_requirements">Job Requirements</label>
+			<label index="tx_sysjobs_requirements.title">Requirement</label>
+			<label index="tt_content.list_type_pi1">Job offers</label>
+            <label index="tx_sysjobs_applicants.name">Name</label>
+            <label index="tx_sysjobs_applicants.firstname">Firstname</label>
+            <label index="tx_sysjobs_applicants.adress">Adress</label>
+            <label index="tx_sysjobs_applicants.zip">Zip</label>
+            <label index="tx_sysjobs_applicants.city">City</label>
+            <label index="tx_sysjobs_applicants.contact_email">Email address</label>
+            <label index="tx_sysjobs_applicants.contact_phone_private">Private Phone</label>
+            <label index="tx_sysjobs_applicants.contact_phone_mobile">Mobile Phone</label>
+            <label index="tx_sysjobs_applicants.application">Application</label>
+            <label index="tx_sysjobs_applicants.job_uid">Job</label>
+            <label index="tx_sysjobs_applicants.comment">Comment</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_sysjobs_jobs">Stelleninserate</label>
+            <label index="tx_sysjobs_applicants">Bewerbung</label>
+			<label index="tx_sysjobs_jobs.title">Stellenbezeichnung</label>
+			<label index="tx_sysjobs_jobs.company_name">Name des Arbeitgebers</label>
+			<label index="tx_sysjobs_jobs.company_info">Information zum Arbeitgeber</label>
+			<label index="tx_sysjobs_jobs.leadin">Lead-In Text</label>
+			<label index="tx_sysjobs_jobs.description">Stellenbeschrieb</label>
+			<label index="tx_sysjobs_jobs.contact_name">Kontaktperson Name</label>
+			<label index="tx_sysjobs_jobs.contact_phone">Kontaktperson Telefon</label>
+			<label index="tx_sysjobs_jobs.contact_email">Kontaktperson Email</label>
+			<label index="tx_sysjobs_jobs.requirements">Anforderungsprofil</label>
+			<label index="tx_sysjobs_requirements">Anforderungsprofil</label>
+			<label index="tx_sysjobs_requirements.title">Anforderung</label>
+			<label index="tt_content.list_type_pi1">Stelleninserate</label>
+            <label index="tx_sysjobs_applicants.name">Name</label>
+            <label index="tx_sysjobs_applicants.firstname">Vorname</label>
+            <label index="tx_sysjobs_applicants.adress">Adresse</label>
+            <label index="tx_sysjobs_applicants.zip">Plz</label>
+            <label index="tx_sysjobs_applicants.city">Ort</label>
+            <label index="tx_sysjobs_applicants.contact_email">E-Mail-Adresse</label>
+            <label index="tx_sysjobs_applicants.contact_phone_private">Tel. Privat</label>
+            <label index="tx_sysjobs_applicants.contact_phone_mobile">Tel. Mobil</label>
+            <label index="tx_sysjobs_applicants.application">Bewerbung</label>
+            <label index="tx_sysjobs_applicants.job_uid">Stelle</label>
+            <label index="tx_sysjobs_applicants.comment">Bemerkung</label>
+		</languageKey>
+	</data>
+</T3locallang>
